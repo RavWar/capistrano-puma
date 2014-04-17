@@ -76,6 +76,7 @@ namespace :puma do
         end
       end
     end
+    after 'deploy:finished', 'puma:jungle:restart'
 
   end
 end
